@@ -222,13 +222,17 @@ function getRandomSafeSpot() {
             delete playerElements[removedKey];
         })
 
-        playerNameInput.addEventListener("child_removed", (snapshot) => {
+        playerNameInput.addEventListener("change", (e) => {
             const newName = e.target.value || createName();
             playerNameInput.value = newName;
             playerRef.update({
                 name: newName,
             })
         })
+
+        allCoinsRef.on("value", (snapshot) => {
+            coins = snapshot.val() || {};
+        });
 
         allCoinsRef.on("child_added", (snapshot) => {
             const coin = snapshot.val();
