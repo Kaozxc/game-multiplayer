@@ -23,7 +23,7 @@ body {
   position: relative;
   width: 240px;
   height: 208px;
-  background: url(/images/map.png) no-repeat no-repeat;
+  background: url(./images/map.png) no-repeat no-repeat;
   transform: scale(3);
   image-rendering: pixelated;
 }
@@ -129,7 +129,7 @@ button:active {
 }
 
 .Character_shadow {
-  background: url(/images/shadow.png) no-repeat no-repeat;
+  background: url(./images/shadow.png) no-repeat no-repeat;
 }
 
 .Character_name-container {
@@ -167,5 +167,5 @@ button:active {
 }
 
 .Coin_shadow {
-  background: url(/images/coin-shadow.png) no-repeat no-repeat;
+  background: url(./images/coin-shadow.png) no-repeat no-repeat;
 }
